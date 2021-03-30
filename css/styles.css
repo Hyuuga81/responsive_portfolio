@@ -1,0 +1,400 @@
+/*font-family: 'Lora', serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;*/
+
+  /***************************** HTML & BODY STYLES ******************/
+  html {
+    width: 100%;
+    font-size: 18px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+    font-size: 1em;
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+
+  /**************************** GENERAL STYLES **********************/
+  header, main, footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  #portfolio, #about, #contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  #portfolio, #about {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .full {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  /* To top button start*/
+  .to-top {
+    background: #fff;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+
+  .to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  /* To top button end */
+
+/********************* FONT STYLES ***********************************/
+
+h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1em;
+  font-style:normal;
+  line-height: 2em;
+}
+
+/********************************** HEADER ***************************/
+
+.nav-bar {
+  /* code to pin navbar to top start
+  position: fixed;                
+  top: 0;
+  background-color: #000;
+  */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  /*flex-direction: column;*/
+}
+
+/* Hamburger menu code start */
+.toggle-button {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Hamburger menu code end */
+
+.menu-c {                /*was menu*/
+  width: 100%;
+  display: none;
+  /*justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;*/
+}
+
+.menu-c.active {
+  display: flex;
+}
+
+.title, .menu-c {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.title a h2 {
+  font-size: 2em;
+}
+
+.title a, .menu-c a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-c ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.menu-c ul li {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.menu-c ul li a {
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.hero {
+  width: 100%;
+  background: url("../img/keyboard.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.hero h2, .hero h3 {
+  width: 100%;
+}
+
+.hero h2 {
+  padding-top: 200px;
+}
+
+.hero h3 {
+  padding-bottom: 200px;
+}
+
+/**************************** PORTFOLIO **********************************/
+
+#portfolio .full {
+  padding-bottom: 50px;
+}
+
+#portfolio .half {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+#portfolio h2 {
+  width: 100%;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+/*************************** ABOUT ***************************************/
+
+#about {
+  background-color: #fff;
+  color: #000;
+}
+
+#about h2 {
+  width: 100%;
+}
+
+/************************** CONTACT **************************************/
+
+#contact .third {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#contact .middle {
+  border-top: 1px dotted #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+#contact h2 {
+  width: 100%;
+  padding-top: 50px;
+}
+
+#contact .middle a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.follow {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.follow a {
+  font-size: 2.5em;
+}
+
+#contact .copyright {
+  padding-top: 50px;
+}
+
+/* Desktop styles 
+#contact .follow a:hover {
+  color: #61b2f8;
+}
+*/
+
+/******************************* TABLET STYLES **************************************/
+
+@media (min-width: 768px) {
+
+  /* CONTACT */
+  .follow {
+    width: 50%;
+  }
+}
+
+/************************************ DESKTOP STYLES *********************************/
+
+@media (min-width: 1200px) {
+
+  /******************** HEADER *******************/
+
+  .nav-bar {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .title {
+    width: 70%;
+  }
+
+  .menu {
+    width: 30%;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .nav-bar .title a:hover, .nav-bar .menu-c a:hover {
+    color: #61b2f8;
+  }
+
+  .menu-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .menu-c {
+    width: 100%;
+  }
+
+  .menu-c ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .hero h3 {
+    padding-bottom: 300px;
+  }
+
+  /**************** PORTFOLIO *****************/
+
+  #portfolio .half {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  #portfolio .content {
+    padding-left: 40px;
+  }
+
+  #portfolio .full {
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+
+  /************** CONTACT ********************/
+
+  #contact .full {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  #contact .third {
+    width: 33%;
+  }
+
+  #contact .middle {
+    border-bottom: none;
+    border-top: none;
+    justify-content: space-between
+  }
+
+  #contact .middle a:hover {
+    color: #61b2f8;
+  }
+
+  .follow {
+    width: 60%;
+  }
+}
